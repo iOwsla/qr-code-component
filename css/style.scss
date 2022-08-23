@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+$grid-small: 575px;
+$grid-medium: 975px;
+$grid-large: 1200px;
+
+.container {
+  width: 1300px;
+  margin: auto;
+}
+
+@media (max-width: $grid-large) {
+  .container {
+    width: $grid-medium;
+  }
+}
+
+@media (max-width: $grid-medium) {
+  .container {
+    width: $grid-small;
+  }
+}
+
+@media (max-width: $grid-small) {
+  .container {
+    width: 100%;
+  }
+}
+
+.box {
+  background: black;
+  width: 500px;
+  height: 500px;
+}
